@@ -1,6 +1,17 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/3oKIPdWdsLyvULsow4/giphy.gif" alt="Saúde e Fitness">
+  <img src="https://raw.githubusercontent.com/dantaswilljpg/projeto-vitalis/main/Assets/logo_verde_normal_size.png" alt="Logo do Projeto Vitalis" width="200">
 </div>
+
+<style>
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    img {
+        animation: spin 2s linear infinite;
+    }
+</style>
 
 ---
 
