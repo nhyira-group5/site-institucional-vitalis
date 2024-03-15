@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/dantaswilljpg/projeto-vitalis/main/Assets/logo%20verde%20-%20normal%20size.png" alt="Logo do Projeto Vitalis" width="200">
+  <img src="https://media.giphy.com/media/l0IyePtLZoZDLqCPG/giphy.gif" alt="Personal Trainer Correndo" width="300">
 </div>
 
 <style>
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
     }
     
     img {
-        animation: spin 2s linear infinite;
+        animation: bounce 2s ease infinite;
     }
 </style>
 
