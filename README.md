@@ -2,16 +2,6 @@
   <img src="https://media.giphy.com/media/MdA16VIoXKKxNE8Stk/giphy.gif" alt="Treinamento" width="300">
 </div>
 
-<style>
-    @keyframes bounce {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
-    }
-    
-    img {
-        animation: bounce 2s ease infinite;
-    }
-</style>
 
 ---
 
