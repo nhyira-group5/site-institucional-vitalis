@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/dantaswilljpg/projeto-vitalis/main/Assets/logo_verde_normal_size.png" alt="Logo do Projeto Vitalis" width="200">
+  <img src="https://raw.githubusercontent.com/dantaswilljpg/projeto-vitalis/main/Assets/logo%20verde%20-%20normal%20size.png" alt="Logo do Projeto Vitalis" width="200">
 </div>
 
 <style>
@@ -12,7 +12,6 @@
         animation: spin 2s linear infinite;
     }
 </style>
-
 
 ---
 
