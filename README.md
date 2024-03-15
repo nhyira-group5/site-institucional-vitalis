@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="https://media.giphy.com/media/3oKIPdWdsLyvULsow4/giphy.gif" alt="Saúde e Fitness">
+</div>
+
+---
+
 ### Projeto Vitalis 💚
 
 Bem-vindo ao Projeto Vitalis! Seja Vitalis e sinta-se vivo! 🌟
@@ -36,14 +42,3 @@ Bem-vindo ao Projeto Vitalis! Seja Vitalis e sinta-se vivo! 🌟
 ---
 
 Junte-se a nós no Projeto Vitalis para uma jornada de saúde e vitalidade! 💪🚀
-
-<div style="animation: fadeIn 2s;">
-    <img src="https://media.giphy.com/media/8lQyyysy45VAA/giphy.gif" alt="Gif">
-</div>
-
-<style>
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-</style>
