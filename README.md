@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/l0IyePtLZoZDLqCPG/giphy.gif" alt="Personal Trainer Correndo" width="300">
+  <img src="https://media.giphy.com/media/MdA16VIoXKKxNE8Stk/giphy.gif" alt="Treinamento" width="300">
 </div>
 
 <style>
