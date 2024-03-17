@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/MdA16VIoXKKxNE8Stk/giphy.gif" alt="Treinamento" width="300">
+  <img src="Assets/logo verde - normal size.png" alt="Logo Vitalis" width="600">
 </div>
 
 
