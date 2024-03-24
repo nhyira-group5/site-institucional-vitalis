@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Maven+Pro:wght@400..900&family=Megrim&display=swap');
+$primary-color: #64C273;
+$secundary-color: #9BFAB0;
+$aux-color: #D7FDD0;
+$white-color: #F7FBFC;
+$black-color: #111111;
+$green-background: #DBF8E0;
+$primary-color-alternative: #734A91;
+
+
+$sm-padding: 1rem;
+$md-padding: 1.5rem;
+$lg-padding: 2rem;
+
+$sm-font-size: 1rem;
+$md-font-size: 1.5rem;
+$lg-font-size: 2rem; 
+
+
+@mixin text-megrim{
+        font-family: "Megrim", system-ui;
+        font-weight: 400;
+        font-style: normal;
+}
+
+@mixin text-mavenPro{
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@mixin text-inter{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        @include text-mavenPro();
+    }
+
+    body{
+        position: relative;
+    }
+
+    .lateralNav{
+        position: fixed;
+        right: 5rem;
+        top: 6rem;
+        z-index: 1;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            gap: 1rem;
+            padding: .5rem;
+            border-radius: 1rem;
+            align-items: center;
+            
+
+            li{
+                @include text-megrim();
+                color: $primary-color;
+                width: .8rem;
+                overflow-wrap: break-word;
+                list-style-type: none;
+                font-size: $sm-font-size;
+                text-align: center;
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+
+            li:hover{
+                color: darken($primary-color, 25%);
+                transition: all 100ms ease;
+            }
+        }
+
+    }
+
+    .headerWrapper{
+    background-color: $white-color;
+    padding: $md-padding;
+    padding-top: .5rem;
+    padding-bottom: 5rem;
+    position: relative;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $sm-padding;
+        padding-top: .1rem;
+
+        .logo{
+            width: 100px;
+            cursor: pointer;
+
+        }
+
+        >:nth-child(1){
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            
+            >:nth-child(2){
+                cursor: pointer;
+            }
+        }
+
+        h1{
+            @include text-megrim();
+            font-size: $lg-font-size ;
+            color: $primary-color;
+        }
+
+        button{
+            padding: $sm-padding;
+            padding-inline: $lg-padding;
+            border-radius: .8rem;
+            background-color: $primary-color;
+            color: $white-color;
+            font-size: $md-font-size - .2rem;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+
+        button:hover{
+            background-color: darken($primary-color, 10%);
+            transition: all .1s ease-in-out;
+        }
+    }
+
+    .headerContainer{
+        display: flex;
+        justify-content: center;
+
+        .headerContent{
+            text-align: center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-block: 5rem;
+
+            h1{
+                font-size: $lg-font-size + 5;
+                font-weight: 500;
+                color: $primary-color;
+
+                b{
+                    color: $primary-color-alternative;
+                    @include text-inter()
+                }
+            }
+
+            h5{
+                font-size: $sm-font-size + .4;
+                font-weight: 500;
+                color: $black-color;
+                margin-block: 4rem;
+                width: 80%;
+            }
+        }
+
+        .headerSocialMidia{
+            position: absolute;
+            left: 1rem;
+            bottom: 5rem;
+            z-index: 1;
+
+            ul{
+                display: flex;
+                gap: 2rem;
+                position: absolute;
+                
+                >:nth-child(1){
+                    list-style-type: none;
+                }
+
+                li{
+                    @include text-megrim();
+                    color: $primary-color;
+                    list-style-type: disclosure-open;
+                    font-size: $sm-font-size + .3;
+
+                    a{
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+
+                    a:hover{
+                        color: darken($primary-color, 20%);
+                        transition: all .1s ease-in-out;
+                    }
+                }
+
+                li::marker{
+                    color: $primary-color-alternative;
+                }
+
+
+            }
+        }
+
+
+    }
+
+    >:nth-child(3){
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    }
+
+
+    .projetoInfoWrapper{
+        background-color: $black-color;
+        display: flex;
+        flex-direction: column;
+        padding: $md-padding;
+        position: relative;
+
+        >h1{
+            background: linear-gradient(90deg, rgba(100,194,115,1) 0%, rgba(67,125,33,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: $lg-font-size + 8;
+            letter-spacing: 4rem;
+            font-weight: 500;
+            margin-left: 5rem;
+        }
+
+        .projetoInfoContent{
+            display: flex;
+            justify-content: end;
+            
+            >img{
+                width: 50rem;
+                position: absolute;
+                left: 4rem;
+                top: 4rem;
+            }
+
+            .beneficios{
+                display: flex;
+                flex-direction: column;
+                padding-inline: $lg-padding;
+                padding-block: $md-padding;
+                border: $secundary-color 4px solid;
+                border-radius: 1rem;
+                color: $white-color;
+                margin-right: 5rem;
+                gap: 3rem;
+            }
+
+            .beneficio:nth-child(2n + 1){
+                display: flex;
+                gap: 3rem;
+                width: 35rem;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .8rem;
+                    text-align: end;
+                    align-items: end;
+
+                    h1{
+                        font-weight: 500;
+                        letter-spacing: .3rem;
+                        font-size: $lg-font-size;
+                    }
+
+                    h4{
+                        
+                        font-size: $sm-font-size + .1;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                img{
+                    width: 6rem;
+                }
+            }
+
+            .beneficio:nth-child(2n + 2){
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 3rem;
+                width: 35rem;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .8rem;
+                    text-align: start;
+                    align-items: start;
+
+                    h1{
+                        font-weight: 500;
+                        letter-spacing: .3rem;
+                        font-size: $lg-font-size;
+                    }
+
+                    h4{
+                        
+                        font-size: $sm-font-size + .1;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                img{
+                    width: 6rem;
+                }
+            }
+            
+        }
+
+        
+    }
+

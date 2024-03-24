@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Maven+Pro:wght@400..900&family=Megrim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+}
+
+.lateralNav {
+  position: fixed;
+  right: 5rem;
+  top: 6rem;
+  z-index: 1;
+}
+.lateralNav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+.lateralNav ul li {
+  font-family: "Megrim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #64C273;
+  width: 0.8rem;
+  overflow-wrap: break-word;
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: center;
+}
+.lateralNav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.lateralNav ul li:hover {
+  color: #2f773b;
+  transition: all 100ms ease;
+}
+
+.headerWrapper {
+  background-color: #F7FBFC;
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+.headerWrapper nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 0.1rem;
+}
+.headerWrapper nav .logo {
+  width: 100px;
+  cursor: pointer;
+}
+.headerWrapper nav > :nth-child(1) {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.headerWrapper nav > :nth-child(1) > :nth-child(2) {
+  cursor: pointer;
+}
+.headerWrapper nav h1 {
+  font-family: "Megrim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #64C273;
+}
+.headerWrapper nav button {
+  padding: 1rem;
+  padding-inline: 2rem;
+  border-radius: 0.8rem;
+  background-color: #64C273;
+  color: #F7FBFC;
+  font-size: 1.3rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.headerWrapper nav button:hover {
+  background-color: #45ae56;
+  transition: all 0.1s ease-in-out;
+}
+.headerWrapper .headerContainer {
+  display: flex;
+  justify-content: center;
+}
+.headerWrapper .headerContainer .headerContent {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 5rem;
+}
+.headerWrapper .headerContainer .headerContent h1 {
+  font-size: 7rem;
+  font-weight: 500;
+  color: #64C273;
+}
+.headerWrapper .headerContainer .headerContent h1 b {
+  color: #734A91;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.headerWrapper .headerContainer .headerContent h5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #111111;
+  margin-block: 4rem;
+  width: 80%;
+}
+.headerWrapper .headerContainer .headerSocialMidia {
+  position: absolute;
+  left: 1rem;
+  bottom: 5rem;
+  z-index: 1;
+}
+.headerWrapper .headerContainer .headerSocialMidia ul {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+}
+.headerWrapper .headerContainer .headerSocialMidia ul > :nth-child(1) {
+  list-style-type: none;
+}
+.headerWrapper .headerContainer .headerSocialMidia ul li {
+  font-family: "Megrim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #64C273;
+  list-style-type: disclosure-open;
+  font-size: 1.3rem;
+}
+.headerWrapper .headerContainer .headerSocialMidia ul li a {
+  color: #64C273;
+  text-decoration: none;
+}
+.headerWrapper .headerContainer .headerSocialMidia ul li a:hover {
+  color: #368a44;
+  transition: all 0.1s ease-in-out;
+}
+.headerWrapper .headerContainer .headerSocialMidia ul li::marker {
+  color: #734A91;
+}
+.headerWrapper > :nth-child(3) {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.projetoInfoWrapper {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  position: relative;
+}
+.projetoInfoWrapper > h1 {
+  background: linear-gradient(90deg, rgb(100, 194, 115) 0%, rgb(67, 125, 33) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10rem;
+  letter-spacing: 4rem;
+  font-weight: 500;
+  margin-left: 5rem;
+}
+.projetoInfoWrapper .projetoInfoContent {
+  display: flex;
+  justify-content: end;
+}
+.projetoInfoWrapper .projetoInfoContent > img {
+  width: 50rem;
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficios {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  border: #9BFAB0 4px solid;
+  border-radius: 1rem;
+  color: #F7FBFC;
+  margin-right: 5rem;
+  gap: 3rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+1) {
+  display: flex;
+  gap: 3rem;
+  width: 35rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+1) div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: end;
+  align-items: end;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+1) div h1 {
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+1) div h4 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+1) img {
+  width: 6rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+2) {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  width: 35rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+2) div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: start;
+  align-items: start;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+2) div h1 {
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+2) div h4 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.projetoInfoWrapper .projetoInfoContent .beneficio:nth-child(2n+2) img {
+  width: 6rem;
+}/*# sourceMappingURL=stylesheet.css.map */
