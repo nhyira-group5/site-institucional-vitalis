@@ -391,10 +391,81 @@ body {
   left: 0;
 }
 
+/* Animação de entrada para os recursos */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.recursosWrapper .recursos .recurso {
+  animation: fadeInUp 1s ease-out;
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.recursosWrapper .recursos .recurso:hover {
+  filter: brightness(110%);
+}
+
+
+.recursosWrapper .recursos .recurso:hover {
+  animation: floating 0.5s ease infinite;
+}
+
+
+.recursosWrapper .recursos .recurso h1,
+.recursosWrapper .recursos .recurso h4 {
+  transition: all 0.5s ease-out;
+}
+
+
+.recursosWrapper .recursos .recurso:hover {
+  filter: brightness(110%);
+}
+
+
+.recursosWrapper .recursos .recurso:hover {
+  box-shadow: 0px 20px 30px -17px rgba(100, 194, 115, 0.5);
+}
+
+
+.recursosWrapper .recursos .recurso:hover {
+  transform: scale(1.05);
+}
+
+
+.recursosWrapper > img {
+  transition: all 0.5s ease-out;
+}
+
+.recursosWrapper .recursos .recurso:hover ~ img {
+  transform: translateY(-20px);
+}
+
 .depoimentosWrapper {
   background-color: #F7FBFC;
   padding-block: 12rem;
 }
+
 .depoimentosWrapper sl-carousel sl-carousel-item .aluno {
   box-shadow: 0px 13px 20px 0px rgba(100, 194, 115, 0.568627451);
 }
@@ -436,6 +507,49 @@ body {
   font-size: 1.8rem;
 }
 
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.depoimentosWrapper sl-carousel sl-carousel-item {
+  animation: slideIn 4s ease-in-out;
+}
+
+
+.depoimentosWrapper sl-carousel sl-carousel-item.hide {
+  display: none;
+}
+
+
+@keyframes jumpInOut {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+.depoimentosWrapper sl-carousel sl-carousel-item {
+  animation: slideIn 5s ease-in-out, jumpInOut 5s ease-in-out;
+}
+
+
+.depoimentosWrapper sl-carousel sl-carousel-item.hide {
+  display: none;
+}
+
+
+
 .contatoWrapper {
   position: relative;
   display: flex;
@@ -467,6 +581,36 @@ body {
   font-size: 1.9rem;
   justify-self: start;
 }
+
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7FBFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #64C273;
+  border-radius: 6px;
+  border: 3px solid #F7FBFC;
+  animation: scroll 0.5s ease-in-out forwards;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #45ae56;
+}
+
 .contatoWrapper div button {
   border: none;
   background-color: #5EAF6B;
