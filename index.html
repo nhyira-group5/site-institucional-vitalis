@@ -6,15 +6,21 @@
     <title>Nyhira - Vitalis</title>
 
     <link rel="stylesheet" href="styles/stylesheet.css">
+
+    
+    <!-- Shoelace components -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
+
 </head>
 <body>
     <main>
         <section class="header">
             <div class="lateralNav">
                 <ul>
-                    <li><a href="">Projeto</a></li>
+                    <li><a href="#projetoInfo">Projeto</a></li>
                
-                    <li><a href="">Recursos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
                
                     <li><a href="">Depoimentos</a></li>
 
@@ -59,14 +65,19 @@
                     </div>
                 </div>
 
-                <img src="Assets/vectorParalelepipedo.png" alt="">
+                
             </div>
 
         </section>
 
-        <section class="projetoInfo">
+        <section id="projetoInfo">
             <div class="projetoInfoWrapper">
                 <h1 >VITALIS</h1>
+
+                <img src="Assets/vectorParalelepipedo.png" alt="">
+                <img src="Assets/vectorParalelepipedoInvertido.svg" alt="">
+
+
 
                 <div class="projetoInfoContent">
                     <img src="Assets/celularGenerico.svg" alt="" srcset="">
@@ -112,6 +123,127 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="objetivo">
+            <div class="objetivoWrapper">
+                <div class="objetivoContent">
+                    <h1>Nosso objetivo</h1>
+
+                    <b>
+                        <h3>
+                            Se sinta bem. Se sinta vivo. Se sinta vita. Seja Vitalis.
+                        </h3>
+                    </b>
+
+                    <div>
+                        <p>
+                            Oferecemos uma solução completa para maximizar seus ganhos musculares. 
+                        </p>
+
+                        <p>
+                            Conectamos você a personal trainers especializados em hipertrofia, facilitando o acesso à orientação profissional adaptada. 
+                        </p>
+
+                        <p>
+                            Além disso, fornecemos ferramentas avançadas de monitoramento de progresso, permitindo que você acompanhe suas conquistas ao longo do tempo de forma eficaz.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <img src="Assets/celularEnotebook.svg" alt="">
+            </div>
+        </section>
+
+        <section id="recursos">
+            <div class="recursosWrapper">
+
+                <div class="recursos">
+                    <div class="recurso">
+                        <h1>Lista de Personal Trainers Especializados</h1>
+                        <h4>Encontre personal trainers qualificados em hipertrofia e crescimento muscular.
+                            Localize profissionais próximos com a integração da Google Places API</h4>
+                    </div>
+                    <div class="recurso">
+                        <h1>Agendamento de Sessões de Treinamento</h1>
+                        <h4>Agende sessões de treinamento personalizado diretamente pelo aplicativo. Você tem controle da sua agenda e rotina pelo aolicativo.</h4>
+                    </div>
+                    <div class="recurso">
+                        <h1>Monitoramento de Progresso</h1>
+                        <h4>Encontre personal trainers qualificados em hipertrofia e crescimento muscular.
+                            Localize profissionais próximos com a integração da Google Places API</h4>
+                    </div>
+                    <div class="recurso">
+                        <h1>Lembretes e acompanhamento</h1>
+                        <h4>Encontre personal trainers qualificados em hipertrofia e crescimento muscular.
+                            Localize profissionais próximos com a integração da Google Places API</h4>
+                    </div>
+                    <div class="recurso">
+                        <h1>Guia e rotina para o seu bem-estar</h1>
+                        <h4>Encontre personal trainers qualificados em hipertrofia e crescimento muscular.
+                            Localize profissionais próximos com a integração da Google Places API</h4>
+                    </div>
+                </div>
+                <img src="Assets/vectorBottomRecursos.svg" alt="">
+            </div>
+        </section>
+
+        <section id="depoimentos">
+
+            <div class="depoimentosWrapper">
+                
+            <sl-carousel navigation loop slides-per-page="2" slides-per-move="2">
+                <sl-carousel-item>
+                    <div class="carouselItemBody personal">
+                        <img src="Assets/ProtoPersona_Marcelo.png" alt="">
+                        <div class="carouselItemContent">
+                            <h1>Marcelo da Silva</h1>
+
+                            <div>
+                                <h3>Os lembretes de sessões agendadas foram muito úteis. Antes, eu costumava perder alguns treinos devido à minha agenda, mas agora consigo me manter consistente. O sistema de agendamento é simples e eficiente</h3>
+                                
+                                <h2>Personal Trainer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </sl-carousel-item>
+
+                <sl-carousel-item>
+                    <div class="carouselItemBody aluno">
+                        <img src="Assets/ProtoPersona_Tauane 1.png" alt="">
+                        <div class="carouselItemContent">
+                            <h1>Tauane da Silva</h1>
+
+                            <div>
+                                <h3>Adorei ter acesso a um guia completo para o meu bem-estar. As dicas de nutrição foram especialmente úteis, e as sugestões de exercícios me ajudaram a alcançar meus objetivos de saúde</h3>
+                                <h2>Estudante de administração</h2>
+                            </div>
+                        </div>
+                    </div>
+                </sl-carousel-item>
+
+                <sl-carousel-item>
+                    <div class="carouselItemBody">
+                        <img src="Assets/ProtoPersona_Tauane 1.png" alt="">
+                        <div class="carouselItemContent">
+                            <h1>Tauane da Silva</h1>
+
+                            <div>
+                                <h3>Adorei ter acesso a um guia completo para o meu bem-estar. As dicas de nutrição foram especialmente úteis, e as sugestões de exercícios me ajudaram a alcançar meus objetivos de saúde</h3>
+                                <h2>Estudante de administração</h2>
+                            </div>
+                        </div>
+                    </div>
+                </sl-carousel-item>
+           </sl-carousel>
+
+            </div>                
+
+        </section>
+
+        <section id="contato">
+            
         </section>
     </main>
 </body>
