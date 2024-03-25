@@ -586,4 +586,107 @@ $lg-font-size: 2rem;
         }
     }
 
-    
+
+    .contatoWrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        background-color: $black-color;
+        padding: $md-padding;
+        padding-block: $lg-padding + 5;
+
+        >img{
+            position: absolute;
+            width: 100%;
+            top: -5rem;
+            left: 0;
+        }
+
+        h1{
+            font-size: $lg-font-size + 3.5;
+            font-weight: 700;
+            color: $primary-color;
+        }
+
+        div{
+            display: flex;
+            color: $white-color;
+            gap: 10rem;
+            height: 15rem;
+
+            h2{
+                width: 55rem;
+                font-size: $md-font-size + .4;
+                justify-self: start;
+            }
+
+            button{
+                border: none;
+                background-color: #5EAF6B;
+                color: $white-color;
+                align-self: end;
+                padding-block: $lg-padding + 1;
+                border-radius: 2rem;
+                @include text-mavenPro();
+                font-size: $lg-font-size + .7;
+                font-weight: 600;
+                padding-inline: $lg-padding + 4;
+                box-shadow: 1px 6px 20px 0px #64c2734d;
+                cursor: pointer;
+                transition: all .1s ease-in-out;
+            }
+
+            button:hover{
+                background-color: darken(#5EAF6B, 10);
+            }
+        }
+    }
+
+    .footerWrapper{
+        color: $white-color;
+        background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(23,41,26,1) 100%);
+        display: flex;
+        justify-content: center;
+        padding: $md-padding;
+        padding-block: 5rem;
+        gap: 10rem;
+        div{
+            display: flex;
+            flex-direction: column;
+
+            gap: 1rem;
+
+            h1{
+                font-size: $md-font-size + .1;
+                font-weight: 600;
+                letter-spacing: .2rem;
+            }
+            h3{
+                width: 23rem;
+                font-size: $sm-font-size + .2;
+            }
+        }
+
+        .leftFooterContent{
+                gap: 5rem;
+        }
+
+        .middleFooterContent{
+            display: grid;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                font-size: $sm-font-size;
+                letter-spacing: .1rem;
+                align-self: end;
+                justify-self: center;
+            }
+        }
+
+        .rightFooterContent{
+      
+        }
+    }
