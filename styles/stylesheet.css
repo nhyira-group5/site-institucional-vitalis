@@ -43,10 +43,30 @@ body {
   color: inherit;
   text-decoration: none;
 }
-.lateralNav ul li:hover {
-  color: #2f773b;
-  transition: all 100ms ease;
+
+.headerSocialMidia ul li a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #000; 
+  text-decoration: none; 
 }
+
+.headerSocialMidia ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0; 
+  background-color: #489254; 
+  transition: width 0.3s ease;
+}
+
+.headerSocialMidia ul li a:hover::after {
+  width: 100%; /
+}
+
 
 .headerWrapper {
   background-color: #F7FBFC;
@@ -528,28 +548,6 @@ body {
   display: none;
 }
 
-
-@keyframes jumpInOut {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-
-.depoimentosWrapper sl-carousel sl-carousel-item {
-  animation: slideIn 5s ease-in-out, jumpInOut 5s ease-in-out;
-}
-
-
-.depoimentosWrapper sl-carousel sl-carousel-item.hide {
-  display: none;
-}
-
-
-
 .contatoWrapper {
   position: relative;
   display: flex;
@@ -671,3 +669,54 @@ body {
   align-self: end;
   justify-self: center;
 }/*# sourceMappingURL=stylesheet.css.map */
+
+
+h1:not(.noUnderline) { 
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h1:not(.noUnderline)::after { 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #489254;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+h1:not(.noUnderline):hover::after { 
+  transform: scaleX(1); 
+}
+
+
+
+nav h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+nav h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #489254;
+  transform: scaleX(0);
+  transition: transform 0.5s ease; 
+}
+
+nav h1:hover::after {
+  transform: scaleX(1); 
+}
+
+.noUnderline::after { 
+  display: none;
+}
