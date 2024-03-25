@@ -42,7 +42,17 @@ body {
 .lateralNav ul li a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease; 
 }
+.lateralNav ul li a:hover {
+  font-weight: bold; 
+  font-size: 1.2rem; 
+  color: #37803d; 
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); 
+  border-radius: 0.5rem; 
+  transform: translateX(-5px); 
+}
+
 
 .headerSocialMidia ul li a {
   position: relative;
@@ -411,23 +421,6 @@ body {
   left: 0;
 }
 
-/* Animação de entrada para os recursos */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-.recursosWrapper .recursos .recurso {
-  animation: fadeInUp 1s ease-out;
-}
-
 
 @keyframes floating {
   0% {
@@ -441,37 +434,16 @@ body {
   }
 }
 
-
-.recursosWrapper .recursos .recurso:hover {
-  filter: brightness(110%);
-}
-
-
-.recursosWrapper .recursos .recurso:hover {
-  animation: floating 0.5s ease infinite;
-}
-
-
 .recursosWrapper .recursos .recurso h1,
 .recursosWrapper .recursos .recurso h4 {
   transition: all 0.5s ease-out;
 }
 
-
 .recursosWrapper .recursos .recurso:hover {
   filter: brightness(110%);
-}
-
-
-.recursosWrapper .recursos .recurso:hover {
   box-shadow: 0px 20px 30px -17px rgba(100, 194, 115, 0.5);
-}
-
-
-.recursosWrapper .recursos .recurso:hover {
   transform: scale(1.05);
 }
-
 
 .recursosWrapper > img {
   transition: all 0.5s ease-out;
@@ -527,26 +499,46 @@ body {
   font-size: 1.8rem;
 }
 
-
-@keyframes slideIn {
+@keyframes rotateFade {
   0% {
-    transform: translateX(-100%);
     opacity: 0;
+    transform: translateX(-100%) rotate(-360deg);
   }
   100% {
-    transform: translateX(0);
     opacity: 1;
+    transform: translateX(0) rotate(0deg);
   }
 }
 
 .depoimentosWrapper sl-carousel sl-carousel-item {
-  animation: slideIn 4s ease-in-out;
+  animation: rotateFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: both;
+  transition: opacity 0.5s ease; 
 }
 
+.depoimentosWrapper sl-carousel sl-carousel-item:nth-child(2n) {
+  animation-delay: 0.3s;
+}
 
 .depoimentosWrapper sl-carousel sl-carousel-item.hide {
   display: none;
 }
+
+
+.carouselItemBody:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.testimonial-item {
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.testimonial-item:hover .carouselItemBody {
+  transform: scale(1.05); 
+  opacity: 0.9; 
+}
+
 
 .contatoWrapper {
   position: relative;
