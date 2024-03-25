@@ -13,6 +13,13 @@ body {
   position: relative;
 }
 
+
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.5s ease-in-out;
+}
+
+
 .lateralNav {
   position: fixed;
   right: 5rem;
