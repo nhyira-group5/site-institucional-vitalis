@@ -434,24 +434,7 @@ body {
   }
 }
 
-.recursosWrapper .recursos .recurso h1,
-.recursosWrapper .recursos .recurso h4 {
-  transition: all 0.5s ease-out;
-}
 
-.recursosWrapper .recursos .recurso:hover {
-  filter: brightness(110%);
-  box-shadow: 0px 20px 30px -17px rgba(100, 194, 115, 0.5);
-  transform: scale(1.05);
-}
-
-.recursosWrapper > img {
-  transition: all 0.5s ease-out;
-}
-
-.recursosWrapper .recursos .recurso:hover ~ img {
-  transform: translateY(-20px);
-}
 
 .depoimentosWrapper {
   background-color: #F7FBFC;
@@ -499,32 +482,6 @@ body {
   font-size: 1.8rem;
 }
 
-@keyframes rotateFade {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%) rotate(-360deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
-  }
-}
-
-.depoimentosWrapper sl-carousel sl-carousel-item {
-  animation: rotateFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation-fill-mode: both;
-  transition: opacity 0.5s ease; 
-}
-
-.depoimentosWrapper sl-carousel sl-carousel-item:nth-child(2n) {
-  animation-delay: 0.3s;
-}
-
-.depoimentosWrapper sl-carousel sl-carousel-item.hide {
-  display: none;
-}
-
-
 .carouselItemBody:hover {
   transform: scale(1.05); 
   transition: transform 0.3s ease; 
@@ -571,7 +528,6 @@ body {
   font-size: 1.9rem;
   justify-self: start;
 }
-
 
 @keyframes scroll {
   0% {
